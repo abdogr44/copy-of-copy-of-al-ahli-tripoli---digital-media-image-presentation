@@ -8,6 +8,7 @@ import TablesSlide from './components/slides/TablesSlide';
 import DemographicsSlide from './components/slides/DemographicsSlide';
 import ChartsSlide from './components/slides/ChartsSlide';
 import SuggestionsSlide from './components/slides/SuggestionsSlide';
+import ConclusionSlide from './components/slides/ConclusionSlide';
 import { ChevronLeftIcon, ChevronRightIcon } from './components/icons/Icons';
 
 const App: React.FC = () => {
@@ -50,6 +51,8 @@ const App: React.FC = () => {
         return <ChartsSlide title={slide.title} description={slide.description} charts={slide.charts} />;
       case 'suggestions':
         return <SuggestionsSlide title={slide.title} suggestions={slide.suggestions} />;
+      case 'conclusion':
+        return <ConclusionSlide title={slide.title} conclusion={slide.conclusion} takeaways={slide.takeaways} contact={slide.contact} />;
       default:
         return <div>Slide type not recognized</div>;
     }

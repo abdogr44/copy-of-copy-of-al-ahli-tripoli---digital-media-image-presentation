@@ -26,7 +26,7 @@ export interface Suggestion {
 }
 
 export interface SlideContent {
-  type: 'title' | 'content' | 'tables' | 'demographics' | 'charts' | 'suggestions';
+  type: 'title' | 'content' | 'tables' | 'demographics' | 'charts' | 'suggestions' | 'conclusion';
   title: string;
   subtitle?: string;
   author?: string;
@@ -37,4 +37,8 @@ export interface SlideContent {
   data?: DemographicItem[];
   charts?: ChartItem[];
   suggestions?: Suggestion[];
+  // fields for conclusion slide
+  conclusion?: string;
+  takeaways?: string[];
+  contact?: string;
 }
