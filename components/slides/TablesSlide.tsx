@@ -11,12 +11,12 @@ interface TablesSlideProps {
 const TablesSlide: React.FC<TablesSlideProps> = ({ title, description, tables }) => {
   return (
     <div className="w-full h-full flex flex-col">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#F3CB13] mb-2">{title}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#1F9632] mb-2">{title}</h2>
       {description && <p className="text-gray-400 mb-6">{description}</p>}
       <div className="flex-grow overflow-y-auto pr-4 -mr-4">
         <div className="space-y-6">
           {tables?.map((table, index) => (
-            <div key={index} className="bg-slate-900/40 border border-slate-700 p-4 rounded-lg">
+            <div key={index} className="bg-slate-900/40 border border-slate-700 p-4 rounded-lg accent-shadow-sm accent-shadow-hover accent-animated">
               <h3 className="font-bold text-xl mb-3 text-[#F3CB13]/90">{table.title}</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-right text-sm">

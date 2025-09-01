@@ -11,7 +11,7 @@ interface ChartsSlideProps {
 const PercentageBar: React.FC<{ value: number; color: string }> = ({ value, color }) => (
     <div className="w-full bg-slate-900/50 rounded-full h-8 overflow-hidden">
         <div 
-            className="h-8 rounded-full flex items-center justify-center text-sm font-bold text-white drop-shadow-sm transition-all duration-1000 ease-out" 
+            className="h-8 rounded-full flex items-center justify-center text-sm font-bold text-white drop-shadow-sm transition-all duration-1000 ease-out accent-drop-sm" 
             style={{ 
                 width: `${value}%`, 
                 backgroundImage: `linear-gradient(to left, ${color}, color-mix(in srgb, ${color} 70%, black))`
@@ -26,7 +26,7 @@ const PercentageBar: React.FC<{ value: number; color: string }> = ({ value, colo
 const ChartsSlide: React.FC<ChartsSlideProps> = ({ title, description, charts }) => {
   return (
     <div className="w-full h-full flex flex-col justify-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#F3CB13] mb-2">{title}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#1F9632] mb-2">{title}</h2>
       {description && <p className="text-gray-400 mb-8 text-lg">{description}</p>}
       <div className="space-y-6">
         {charts?.map((chart, index) => (

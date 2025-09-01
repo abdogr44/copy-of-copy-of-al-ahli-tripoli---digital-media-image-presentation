@@ -1,0 +1,8 @@
+Founder Preferences & Project Insights
+
+- Slide Titles: Use forest green #1F9632 for titles on slides 2–12.
+- Arabic RTL: Maintain RTL layout and Tajawal font across the app.
+- Contrast: Favor darker text mappings in light mode for readability.
+- Props Discipline: Ensure slide components receive props consistent with SlideContent; avoid map on undefined arrays.
+- Theming: Persist theme in localStorage; always set data-theme on <html> before paint to avoid FOUC.
+- Identity: Legacy jonquil #F3CB13 currently remains for controls unless explicitly changed.

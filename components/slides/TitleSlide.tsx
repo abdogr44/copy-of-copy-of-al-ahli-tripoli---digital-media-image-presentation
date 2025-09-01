@@ -13,17 +13,24 @@ const TitleSlide: React.FC<TitleSlideProps> = ({ title, subtitle, author, superv
     <div className="flex flex-col items-center justify-center text-center h-full">
       <div className="flex items-center justify-center divide-x-reverse divide-x divide-celadon/20 border border-celadon/20 mb-10">
         <div className="p-4 flex items-center justify-center gap-x-4 w-52">
-          <img src="/جامعة طرابلس 2.jpg" alt="جامعة طرابلس" className="h-12 w-12 object-contain"/>
+          <img src="/tripoli-university.jpg" alt="جامعة طرابلس" className="h-12 w-12 object-contain"/>
           <div className="text-right">
               <p className="text-base text-gray-100 font-semibold">جامعة</p>
               <p className="text-sm text-gray-300">طرابلس</p>
           </div>
         </div>
         <div className="p-4 flex items-center justify-center gap-x-4 w-52">
-          <img src="/كلية الإعلام.jpg" alt="كلية الإعلام والإتصال" className="h-12 w-12 object-contain"/>
+          <img src="/faculty-of-media.jpg" alt="كلية الإعلام والإتصال" className="h-12 w-12 object-contain"/>
           <div className="text-right">
               <p className="text-base text-gray-100 font-semibold">كلية</p>
               <p className="text-sm text-gray-300">الإعلام والإتصال</p>
+          </div>
+        </div>
+        <div className="p-4 flex items-center justify-center gap-x-4 w-52">
+          <img src="/ahli-tripoli-club.jpg" alt="نادي الأهلي طرابلس" className="h-12 w-12 object-contain"/>
+          <div className="text-right">
+              <p className="text-base text-gray-100 font-semibold">النادي الأهلي</p>
+              <p className="text-sm text-gray-300">طرابلس</p>
           </div>
         </div>
       </div>

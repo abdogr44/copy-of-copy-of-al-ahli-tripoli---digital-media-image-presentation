@@ -67,7 +67,7 @@ const chartColors = ['#F3CB13', '#1F9632', '#3b82f6', '#ec4899'];
 const DemographicsSlide: React.FC<DemographicsSlideProps> = ({ title, description, data }) => {
   return (
     <div className="w-full h-full flex flex-col justify-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#F3CB13] mb-2">{title}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#1F9632] mb-2">{title}</h2>
       {description && <p className="text-gray-400 mb-10 text-lg">{description}</p>}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {data?.map((item, index) => (
