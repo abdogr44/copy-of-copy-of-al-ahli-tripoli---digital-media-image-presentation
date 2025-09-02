@@ -34,7 +34,7 @@ const TitleSlide: React.FC<TitleSlideProps> = ({ title, subtitle, author, superv
           </div>
         </div>
       </div>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F3CB13] mb-4 drop-shadow-[0_2px_1px_#969696]">{title}</h1>
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F3CB13] mb-4 drop-shadow-[0_4px_3px_#969696]">{title}</h1>
       {subtitle && <h2 className="text-xl md:text-2xl text-gray-300 mb-12">{subtitle}</h2>}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg mt-4 w-full max-w-3xl">
         {author && <p className="text-gray-400 text-right">{author}</p>}
